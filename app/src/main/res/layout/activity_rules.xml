@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/background"
+        tools:context=".RulesActivity">
+
+        <Button
+            android:id="@+id/returnToGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Return To Game"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rulesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:background="?attr/colorPrimary"
+            android:text="The Rules of the Beetle Dice Game"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="1. Setup: Players take turns rolling a six-sided die
+            \n \n2. Rolling and Drawing: Each roll corresponds to a specific part of the beetle \n\n6 roll: Body \n5 roll: Head \n4 roll: Tail
+            \n3 roll: Legs \n2 roll: antennae \n1 roll: eyes \n\n3. Order of Parts: The player must first draw the body before any other part can be added. The head must also be drawn before antennae and eyes
+            \n\n4. Completing the beetle: Once a player has drawn all parts of their beetle, why shout, Beetle! and WIN! They can then hit reset to play again "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/rulesTitle"
+            app:layout_constraintStart_toStartOf="@+id/rulesTitle"
+            app:layout_constraintTop_toTopOf="@+id/rulesTitle" />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="336dp"
+            android:src="@drawable/rules_icon"
+            app:layout_constraintEnd_toEndOf="@+id/rules"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/rules"
+            app:layout_constraintTop_toTopOf="@+id/rules" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
